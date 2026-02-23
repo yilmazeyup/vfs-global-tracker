@@ -1,0 +1,86 @@
+.header {
+  height: 64px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .header {
+  background: #1a1a1a;
+  border-color: #2a2a2a;
+}
+
+.header-left h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.status-dot.active {
+  background: #10b981;
+  animation: pulse 2s infinite;
+}
+
+.status-dot.inactive {
+  background: #6b7280;
+}
+
+.status-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+body.dark-mode .status-text {
+  color: #9ca3af;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: #f3f4f6;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+body.dark-mode .theme-toggle {
+  background: #2a2a2a;
+}
+
+.theme-toggle:hover {
+  background: #e5e7eb;
+}
+
+body.dark-mode .theme-toggle:hover {
+  background: #3a3a3a;
+}

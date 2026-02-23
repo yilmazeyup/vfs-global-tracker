@@ -1,0 +1,74 @@
+# 🎯 VFS Global Randevu Sistemi - Python Dependencies
+
+# Web Scraping & Automation
+selenium==4.16.0
+undetected-chromedriver==3.5.4
+beautifulsoup4==4.12.2
+lxml==4.9.3
+html2text==2020.1.16
+
+# HTTP & Async
+aiohttp==3.9.1
+requests==2.31.0
+httpx==0.25.2
+
+# Image & Screenshot Processing  
+Pillow==10.1.0
+opencv-python==4.8.1.78
+
+# Database Drivers
+psycopg2-binary==2.9.9
+pymongo==4.6.1
+motor==3.3.2  # Async MongoDB
+
+# Configuration & Environment
+python-dotenv==1.0.0
+pydantic==2.5.2
+pydantic-settings==2.1.0
+
+# Logging & Monitoring
+structlog==23.2.0
+colorlog==6.8.0
+rich==13.7.0
+
+# Date & Time
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.2
+
+# Utilities
+click==8.1.7
+tqdm==4.66.1
+pathlib2==2.3.7
+dataclasses-json==0.6.3
+
+# Testing & Development
+pytest==7.4.3
+pytest-asyncio==0.22.0
+pytest-mock==3.12.0
+black==23.12.1
+flake8==6.1.0
+
+# Performance & Optimization
+uvloop==0.19.0  # Linux/Mac only
+orjson==3.9.10  # Fast JSON
+
+# Security
+cryptography==41.0.8
+hashlib-compat==1.0.1
+
+# Retry & Resilience
+tenacity==8.2.3
+backoff==2.2.1
+
+# Browser Management
+webdriver-manager==4.0.1
+chromedriver-autoinstaller==0.6.4
+
+# Optional: Advanced Features
+# scikit-learn==1.3.2  # For ML features
+# tensorflow==2.15.0   # For advanced AI
+# opencv-python==4.8.1.78  # For advanced image processing

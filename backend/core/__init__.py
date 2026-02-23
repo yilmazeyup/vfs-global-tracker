@@ -1,0 +1,1 @@
+# VFS Global Core Package

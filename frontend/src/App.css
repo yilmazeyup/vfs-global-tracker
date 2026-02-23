@@ -1,0 +1,116 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  transition: background-color 0.3s ease;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+}
+
+body.dark-mode .App {
+  background-color: #0f0f0f;
+}
+
+body.dark-mode .main-content {
+  background-color: #0f0f0f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+/* Loading Animation */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Status Colors */
+.status-active {
+  color: #10b981;
+}
+
+.status-inactive {
+  color: #6b7280;
+}
+
+.status-error {
+  color: #ef4444;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .card {
+  background: #1a1a1a;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-success {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
