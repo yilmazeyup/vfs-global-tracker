@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import './Dashboard.css';
 
@@ -32,9 +32,7 @@ const Dashboard = ({ monitoring, setMonitoring }) => {
     toast.success('🚀 Randevu taraması başlatıldı!');
     
     // Simulated monitoring update
-    const interval = setInterval(() => {
-      if (!monitoring) return;
-      
+    setInterval(() => {
       setStats(prev => ({
         ...prev,
         totalScans: prev.totalScans + 1,
